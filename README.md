@@ -26,14 +26,24 @@ No clue what the `ngx` command line tool is? Learn more about [AngularJS Express
 
 ## How to use
 
+Edit the LESS files to your liking:
+
 - `_bootstrap.less`:
     - comment/uncomment the modules you wish to include
     - set `@bootstrap-path-to-less-files` to the path of the Bootstrap less files
 - `_variables.less`:
     - configure the Bootstrap variables to fit your needs
 - `styles.less`:
-    - include `styles.css` as your stylesheet in your application
-    - is automatically preprocessed, minified and autoprefixed by Angular Express
+    - add styles
+    - import styles from other components
+    
+and then include the styles in your markup:
+
+```javascript
+link(rel="stylesheet", type="text/css", href="components/less-custom-bootstrap3/styles.css")
+```
+
+`styles.less` is automatically preprocessed, minified and autoprefixed by Angular Express to `styles.css`.
 
 ## License
 
