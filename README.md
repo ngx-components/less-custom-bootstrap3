@@ -12,6 +12,16 @@ To install the component:
 $ ngx install less-custom-bootstrap3
 ```
 
+By default, the component is configured to include LESS files from a jspm installed Bootstrap.
+
+So you should either run:
+
+```bash
+$ jspm install bootstrap-less
+```
+
+or update the `@bootstrap-path-to-less-files` variable in `_bootstrap.less` to make it point to the folder with LESS files.
+
 No clue what the `ngx` command line tool is? Learn more about [AngularJS Express](https://github.com/angular-express/angular-express).
 
 ## How to use
